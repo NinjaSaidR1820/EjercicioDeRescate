@@ -23,7 +23,9 @@ namespace ExamenProgramacion
 
         Universitario u;
 
-        int Aprovados = 0;
+        int AprovadosUNI = 0;
+        int AprovadosUNAN = 0;
+        int AprovadosUNICIT = 0;
 
 
         int contador = 0;
@@ -223,29 +225,37 @@ namespace ExamenProgramacion
             foreach (Ingenieria xd in AproRepro1)
             {
 
-                if(xd.Notas > 59)
+                if(xd.Notas > 59 && xd.Universidad == "UNI")
                 {
-                    Aprovados++;
+                    AprovadosUNI++;
 
                 }
 
-                txtCONSULTA.AppendText("La Universidad " + xd.Universidad + "Tiene un total de estudiantes aprovados de: " + Aprovados);
+                
 
 
             }
             foreach (Universitario xd2 in AproRepro2)
             {
-                if (xd2.Notas > 59)
+                if (xd2.Notas > 59 && xd2.Universidad == "UNAN")
                 {
-                    Aprovados++;
+                    AprovadosUNAN++;
 
                 }
 
-                txtCONSULTA.AppendText("La Universidad " + xd2.Universidad + "Tiene un total de estudiantes aprovados de: " + Aprovados);
+                if (xd2.Notas > 59 && xd2.Universidad == "UNICIT")
+                {
+                    AprovadosUNICIT++;
+
+                }
+
             }
 
 
-           
+            txtCONSULTA.AppendText("Los estudiantes aprovados de la UNI son: "+AprovadosUNI+"\r\n"+
+                "Los estudiantes aprovados de la UNAN son: " + AprovadosUNAN + "\r\n" +
+                "Los estudiantes aprovados de la UNICIT son: " + AprovadosUNICIT + "\r\n");
+
 
         }
 
@@ -294,5 +304,19 @@ namespace ExamenProgramacion
             txtCONSULTA.Clear();
             getEstudianteYUniversidad();
         }
+
+        private void RadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtCONSULTA.Clear();
+            getAprobadosNoAprovados();
+        }
     }
 }
+
+
+
+
+
+
+
+// Tarea    Listas y DataGridView 

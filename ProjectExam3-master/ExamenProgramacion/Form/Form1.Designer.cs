@@ -67,6 +67,7 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.rbUniversidadMasEstudiantes = new System.Windows.Forms.RadioButton();
             this.rbNameyUniver = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersona)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -427,6 +428,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.rbNameyUniver);
             this.groupBox1.Controls.Add(this.rbUniversidadMasEstudiantes);
             this.groupBox1.Controls.Add(this.rbPromediio);
@@ -472,6 +474,18 @@
             this.rbNameyUniver.Text = "Estudiante y Universidad";
             this.rbNameyUniver.UseVisualStyleBackColor = true;
             this.rbNameyUniver.CheckedChanged += new System.EventHandler(this.RbNameyUniver_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(149, 52);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(76, 17);
+            this.radioButton1.TabIndex = 3;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Aprovados";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
             // Form1
             // 
@@ -565,6 +579,7 @@
         private System.Windows.Forms.RadioButton rbPromediio;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.RadioButton rbNameyUniver;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 
