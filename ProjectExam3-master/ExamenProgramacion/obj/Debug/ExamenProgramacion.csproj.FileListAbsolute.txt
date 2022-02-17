@@ -1,0 +1,10 @@
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\obj\Debug\ExamenProgramacion.csprojAssemblyReference.cache
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\obj\Debug\ExamenProgramacion.Form1.resources
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\obj\Debug\ExamenProgramacion.Properties.Resources.resources
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\obj\Debug\ExamenProgramacion.csproj.GenerateResource.cache
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\obj\Debug\ExamenProgramacion.csproj.CoreCompileInputs.cache
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\bin\Debug\ExamenProgramacion.exe.config
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\bin\Debug\ExamenProgramacion.exe
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\bin\Debug\ExamenProgramacion.pdb
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\obj\Debug\ExamenProgramacion.exe
+C:\Users\JADPA02\Desktop\ProjectExam3-master\ExamenProgramacion\obj\Debug\ExamenProgramacion.pdb
