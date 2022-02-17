@@ -23,7 +23,7 @@ namespace ExamenProgramacion
 
         Universitario u;
 
-
+        int Aprovados = 0;
 
 
         int contador = 0;
@@ -141,17 +141,6 @@ namespace ExamenProgramacion
 
             }
 
-
-            if (rbNameyUniver.Checked)
-            {
-
-
-            }
-
-
-
-
-
         }
 
         #region LINQ
@@ -225,6 +214,42 @@ namespace ExamenProgramacion
         }
 
 
+        public void getAprobadosNoAprovados()
+        {
+
+            IEnumerable<Ingenieria> AproRepro1 = from p in lista select p;
+            IEnumerable<Universitario> AproRepro2 = from f in lista2 select f;
+
+            foreach (Ingenieria xd in AproRepro1)
+            {
+
+                if(xd.Notas > 59)
+                {
+                    Aprovados++;
+
+                }
+
+                txtCONSULTA.AppendText("La Universidad " + xd.Universidad + "Tiene un total de estudiantes aprovados de: " + Aprovados);
+
+
+            }
+            foreach (Universitario xd2 in AproRepro2)
+            {
+                if (xd2.Notas > 59)
+                {
+                    Aprovados++;
+
+                }
+
+                txtCONSULTA.AppendText("La Universidad " + xd2.Universidad + "Tiene un total de estudiantes aprovados de: " + Aprovados);
+            }
+
+
+           
+
+        }
+
+
 
 
         #endregion
@@ -253,16 +278,20 @@ namespace ExamenProgramacion
 
         private void RbUniversidadMasEstudiantes_CheckedChanged(object sender, EventArgs e)
         {
+            txtCONSULTA.Clear();
+
             getUniversidadMasEstudiantes();
         }
 
         private void RbPromediio_CheckedChanged(object sender, EventArgs e)
         {
+            txtCONSULTA.Clear();
             getPromedio();
         }
 
         private void RbNameyUniver_CheckedChanged(object sender, EventArgs e)
         {
+            txtCONSULTA.Clear();
             getEstudianteYUniversidad();
         }
     }
